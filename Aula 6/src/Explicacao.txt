@@ -1,0 +1,31 @@
+Objeto Todo  = onde tiver um losango ao lado
+Objeto Parte = aquele que não tem o losango, objeto parte não necessita do objeto todo
+
+EX: Um cliente pode existir sem depender de uma conta TODO(Conta), Parte(Cliente)
+
+Exempplo de Agregação:
+
+public class Main{
+    Public static void main(String[] args){
+        Conta conta = new Conta();
+        Cliente cliente = new Cliente();
+
+        conta.titular = cliente;
+
+    }
+}
+
+Composição = Losango preenchido, na composição o objeto parte não existem sem o todo
+EX: uma sala não existe sem um comodo
+
+Construtor = não tem retorno, é publico e tem o mesmo nome da classe
+EX:
+
+public class Empresa{
+    String nome;
+    Departamento dep;
+
+    public Empresa() {
+        dep = new Departamento();
+    }
+}
