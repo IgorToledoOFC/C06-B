@@ -1,0 +1,43 @@
+                Arrays
+    Declarando um Arrays
+int []x;
+int[]y;
+int z[];
+
+    Inicializar um array
+int[] x = new int[10];
+ou
+int z[] = {1,2,3,4};
+
+String [] professores = new String[4];
+professores[0];
+
+    *Quando você declara um array em Java ele tem como padrão zeros em sua posição
+    EX:
+
+    int[] = new int[3];
+    0[0]
+    0[1]
+    0[2]
+
+    Criando Arrays de objetos
+
+Bloco blocos[] = new Bloco[5];
+Bloco b1 = new Bloco(); <--- Instancia
+blocos[0] = b1;
+ou
+Pessoa pessoas[] = new Pessoa[3];
+pessoas[0] = new Pessoa();
+
+    *Quando não se coloca nada dentro de um array de objetos, tem se null dentro dele
+
+    Acessar informações no array de objetos
+
+blocos[0].nome
+blocos[0].quebrar(b2);
+
+    Percorrer Array
+
+for (int 1=0; i<blocos.length; i++) {
+    System.out.println(blocos[i];
+}
